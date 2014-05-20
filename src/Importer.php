@@ -42,7 +42,7 @@ class Importer {
 				'id'              => $row[0],
 				'name'            => $row[1],
 				'ascii_name'      => $row[2],
-				'alternate_names' => $row[3],
+				// 'alternate_names' => $row[3],
 				'latitude'        => $row[4],
 				'longitude'       => $row[5],
 				'f_class'         => $row[6],
