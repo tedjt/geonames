@@ -22,6 +22,7 @@ class Importer {
 	public function __construct(RepositoryInterface $repository)
 	{
 		$this->repository = $repository;
+		DB::connection()->disableQueryLog(); // so that we don't run out of memory
 	}
 
 	/**
