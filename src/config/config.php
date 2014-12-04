@@ -7,14 +7,14 @@ return array(
 		'path' => storage_path() . '/meta/geonames',
 
 		'files' => array(
-			'countries' => 'http://download.geonames.org/export/dump/countryInfo.txt',
-			'names'     => 'http://download.geonames.org/export/dump/allCountries.zip',
-			'alternate' => 'http://download.geonames.org/export/dump/alternateNames.zip',
-			'hierarchy' => 'http://download.geonames.org/export/dump/hierarchy.zip',
-			'admin1'    => 'http://download.geonames.org/export/dump/admin1CodesASCII.txt',
-			'admin2'    => 'http://download.geonames.org/export/dump/admin2Codes.txt',
-			'feature'   => 'http://download.geonames.org/export/dump/featureCodes_en.txt',
-			'timezones' => 'http://download.geonames.org/export/dump/timeZones.txt',
+			'countries' => 'http://www.geonames.org/premiumdump/%geodate/countryInfo.txt',
+			'names'     => 'http://www.geonames.org/premiumdump/%geodate/allCountries.zip',
+			'alternate' => 'http://www.geonames.org/premiumdump/%geodate/alternateNames.zip',
+			'hierarchy' => 'http://www.geonames.org/premiumdump/%geodate/hierarchy.zip',
+			'admin1'    => 'http://www.geonames.org/premiumdump/%geodate/admin1CodesASCII.txt',
+			'admin2'    => 'http://www.geonames.org/premiumdump/%geodate/admin2Codes.txt',
+			'feature'   => 'http://www.geonames.org/premiumdump/%geodate/featureCodes_en.txt',
+			'timezones' => 'http://www.geonames.org/premiumdump/%geodate/timeZones.txt',
 		),
 
 		'development' => 'http://download.geonames.org/export/dump/cities15000.zip',

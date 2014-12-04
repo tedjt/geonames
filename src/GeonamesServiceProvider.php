@@ -28,7 +28,7 @@ class GeonamesServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app['config']->package('ipalaus/geonames', __DIR__ . '/premium_config');
+		$this->app['config']->package('ipalaus/geonames', __DIR__ . '/config');
 
 		$this->registerRepository();
 		$this->registerCommands();
