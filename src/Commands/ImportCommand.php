@@ -287,7 +287,7 @@ class ImportCommand extends Command {
 	 */
 	public function getFiles()
 	{
-		return $this->config['files'];
+          return str_replace('%geodate', $this->option('date'), $this->config['files']);
 	}
 
 		/**
@@ -329,6 +329,8 @@ class ImportCommand extends Command {
 	{
 		return array(
 			array('country', null, InputOption::VALUE_REQUIRED, 'Downloads just the specific country.'),
+                        array('date', null, InputOption::VALUE_REQUIRED, 'Downloads data for a particular release date.'.
+                                                                         'E.g. 201412 for http://www.geonames.org/premiumdump/201412/'),
 			array('development', null, InputOption::VALUE_NONE, 'Downloads an smaller version of names (~10MB).'),
 			array('fetch-only', null, InputOption::VALUE_NONE, 'Just download the files.'),
 			array('wipe-files', null, InputOption::VALUE_NONE, 'Wipe old downloaded files and fetch new ones.'),
